@@ -25,16 +25,5 @@ Below are a few of my projects:
 
 # Contact
 
-If you'd like to reach out to me, feel free to use the contact form on my portfolio website or send me an email at `youremail@example.com`.
+If you'd like to reach out to me, feel free to use the contact form on my portfolio website or send me an email at `shakilih562@gmail.com.com`.
 
-# How to View This Project
-
-You can view my portfolio live by visiting the following link:  
-[My Personal Portfolio](https://your-username.github.io/personal-portfolio/)
-
-## How to Run Locally
-
-To run this project locally on your machine, follow these steps:
-1. Clone this repository:
-   ```bash
-   git clone https://github.com/your-username/personal-portfolio.git

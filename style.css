@@ -1,0 +1,365 @@
+ /* General Style */
+
+ body{
+  font-family: "Roboto", serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+ }
+
+
+ header {
+   background-color: #333; 
+   color: white; /* Light text color */
+   padding: 1rem 2rem; /* Padding around header */
+   display: flex; /* Flexbox layout */
+   justify-content: space-between; /* Space out items */
+   align-items: center; /* Vertically center items */
+}
+
+header h1 {
+   font-size: 2rem; /* Set font size for the name */
+   margin: 0; /* Remove default margin */
+   font-family: 'Arial', sans-serif; /* Set a clean, modern font */
+   color: #f39c12; /* Orange color for the name */
+}
+
+nav {
+   display: flex; /* Flexbox layout for nav items */
+}
+
+nav ul {
+   list-style: none; /* Remove default list styles */
+   margin: 0; /* Remove margin */
+   padding: 0; /* Remove padding */
+   display: flex; /* Display list items in a row */
+}
+
+nav ul li {
+   margin-right: 1.5rem; /* Add space between links */
+}
+
+nav ul li:last-child {
+   margin-right: 0; /* Remove margin for the last link */
+}
+
+nav a {
+   text-decoration: none; /* Remove underline */
+   color: white; /* White text color */
+   font-size: 1rem; /* Font size for links */
+   transition: color 0.3s ease; /* Smooth color transition */
+}
+
+nav a:hover {
+   color: #f39c12; /* Orange color on hover */
+}
+
+  
+/* Style the About Section */
+#about {
+   padding: 3rem 2rem; /* Adds padding around the section */
+   background-color: #f4f4f4; /* Light background color */
+   text-align: center; /* Center-align the content */
+}
+
+#about h2 {
+   font-size: 2.5rem; /* Larger font for the heading */
+   color: #333; /* Dark color for the heading */
+   margin-bottom: 1rem; /* Space below the heading */
+   font-family: "Roboto", serif; /* Clean font */
+   border-bottom: 2px solid #f39c12; /* Underline effect */
+   display: inline-block; /* Keeps the heading inline with underline */
+   padding-bottom: 0.5rem;
+}
+
+#about p {
+   font-size: 1.2rem; /* Slightly larger text for the bio */
+   color: #555; /* Softer text color */
+   margin-bottom: 2rem; /* Space below the paragraph */
+   line-height: 1.6; /* Improve readability */
+   max-width: 800px; /* Limit paragraph width */
+   margin-left: auto; /* Center align the paragraph */
+   margin-right: auto;
+}
+
+#about img {
+   width: 250px; /* Fixed image width */
+   height: 250px; /* Fixed image height */
+   border-radius: 50%; /* Circular image */
+   object-fit: cover; /* Ensures the image is well-fitted */
+   border: 4px solid black; /* Border around the image */
+   transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth effects on hover */
+}
+
+#about img:hover {
+   transform: scale(1.1); /* Slightly enlarge the image on hover */
+   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Shadow effect */
+}
+
+
+
+ h2{
+   border-bottom: 2px solid #333;
+   display: inline-block;
+ }
+
+ .project {
+   margin: 1rem 0;
+ }
+
+ 
+
+/* Style the Contact Section */
+#Contact {
+   padding: 2rem;
+   background-color: #f9f9f9; /* Light background for contrast */
+   text-align: center;
+}
+
+#Contact h2 {
+   font-size: 2rem;
+   margin-bottom: 1rem;
+   color: #333;
+}
+
+/* Style the Form */
+#Contact form {
+   max-width: 500px; /* Center and constrain width */
+   margin: 0 auto; /* Center the form */
+   display: flex;
+   flex-direction: column; /* Stack form elements vertically */
+   gap: 1rem; /* Add space between elements */
+}
+
+/* Style Form Labels */
+#Contact form label {
+   text-align: left; /* Align labels to the left */
+   font-size: 1rem;
+   font-weight: bold;
+   color: #555;
+}
+
+/* Style Form Inputs and Textarea */
+#Contact form input, 
+#Contact form textarea {
+   width: 100%; /* Full width */
+   padding: 10px;
+   border: 1px solid #ccc;
+   border-radius: 5px;
+   font-size: 1rem;
+   outline: none;
+   transition: border-color 0.3s ease;
+}
+
+#Contact form input:focus, 
+#Contact form textarea:focus {
+   border-color: black; /* Highlight on focus */
+}
+
+/* Style the Submit Button */
+#Contact form button {
+   background-color: #f39c12; /* Orange button */
+   color: white;
+   border: none;
+   padding: 10px 15px;
+   border-radius: 5px;
+   font-size: 1rem;
+   cursor: pointer;
+   transition: background-color 0.3s ease;
+}
+
+#Contact form button:hover {
+   background-color: #e67e22; /* Darker orange on hover */
+}
+
+
+
+/* Style the Skills Section */
+#Skills {
+   padding: 2rem;
+   background-color: #f0f8ff; /* Light background color */
+   text-align: center; /* Center-align the text */
+}
+
+#Skills h2 {
+   font-size: 2rem;
+   color: #333; /* Dark color for the heading */
+   margin-bottom: 1.5rem;
+   border-bottom: 2px solid #f39c12; /* Underline for the heading */
+   display: inline-block;
+   padding-bottom: 0.5rem;
+}
+
+#Skills ul {
+   list-style: none; /* Remove default bullet points */
+   padding: 0; /* Remove default padding */
+   margin: 0 auto; /* Center the list */
+   max-width: 300px; /* Constrain list width */
+}
+
+#Skills ul li {
+   background-color: #f39c12; /* Highlight each skill */
+   color: white; /* Text color */
+   font-size: 1.2rem;
+   margin: 0.5rem 0; /* Space between items */
+   padding: 10px 15px;
+   border-radius: 5px; /* Rounded corners */
+   transition: transform 0.3s ease, background-color 0.3s ease; /* Smooth effect */
+}
+
+#Skills ul li:hover {
+   background-color: #e67e22; /* Slightly darker orange on hover */
+   transform: scale(1.05); /* Enlarge slightly on hover */
+}
+
+
+
+/* Style the Projects Section */
+#project {
+   padding: 2rem;
+   background-color: #f9f9f9; /* Light background for contrast */
+   text-align: center;
+}
+
+#project h2 {
+   font-size: 2rem;
+   color: #333; /* Dark heading color */
+   margin-bottom: 2rem;
+   border-bottom: 2px solid #f39c12; /* Underline */
+   display: inline-block;
+   padding-bottom: 0.5rem;
+}
+
+/* Style the Individual Project Cards */
+.project {
+   background-color: white; /* Card background */
+   border: 1px solid #ddd; /* Light border for card */
+   border-radius: 8px; /* Rounded corners */
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+   margin: 1rem auto; /* Space between cards */
+   max-width: 600px; /* Constrain card width */
+   padding: 1.5rem;
+   text-align: left; /* Align text to the left */
+   transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+}
+
+.project:hover {
+   transform: scale(1.05); /* Enlarge slightly on hover */
+   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Add deeper shadow */
+}
+
+/* Style Project Titles */
+.project h3 {
+   font-size: 1.5rem;
+   color: #333; /* Dark title color */
+   margin-bottom: 0.5rem;
+}
+
+/* Style Project Descriptions */
+.project p {
+   font-size: 1rem;
+   color: #555; /* Softer text color */
+   margin-bottom: 1rem;
+   line-height: 1.6; /* Improve readability */
+}
+
+/* Style Project Links */
+.project a {
+   display: inline-block;
+   color: white;
+   background-color: #f39c12; /* Bright button color */
+   text-decoration: none;
+   padding: 0.5rem 1rem;
+   border-radius: 5px;
+   font-size: 1rem;
+   transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+
+.project a:hover {
+   background-color: #e67e22; /* Slightly darker on hover */
+}
+
+
+
+/* Style the Footer */
+footer {
+   background-color: #333; /* Dark background color */
+   color: white; /* Light text color for contrast */
+   text-align: center; /* Center-align text */
+   padding: 1.5rem 0; /* Add vertical padding */
+   font-size: 1rem; /* Set font size */
+   border-top: 3px solid #f39c12; /* Add a top border for separation */
+}
+
+/* Style the Footer Text */
+footer p {
+   margin: 0; /* Remove default margin */
+   font-family: 'Arial', sans-serif; /* Set a clean font */
+   line-height: 1.5; /* Improve text readability */
+}
+
+/* Add Hover Effect for Footer (Optional) */
+footer:hover {
+   background-color: #444; /* Slightly lighter background on hover */
+   transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+
+
+ /* Responsive Design  */
+
+ @media (max-width: 600px) {
+    header nav ul li{
+      display: block;
+      margin: 10px 0;
+    }
+ }
+
+ @media (max-width: 768px) {
+   body{
+      font-size: 14px;
+   }
+
+   header {
+      flex-direction: column; /* Stack items vertically on smaller screens */
+      text-align: center; /* Center the header text */
+  }
+
+  nav ul {
+      flex-direction: column; /* Stack the links vertically */
+      margin-top: 1rem; /* Add spacing between nav and name */
+  }
+
+  nav ul li {
+      margin-right: 0; /* Remove margin */
+      margin-bottom: 1rem; /* Space between vertical links */
+  }
+
+  nav ul li:last-child {
+      margin-bottom: 0; /* Remove margin for last link */
+  }
+
+
+
+  #about h2 {
+   font-size: 2rem; /* Adjust heading size on smaller screens */
+}
+
+#about p {
+   font-size: 1rem; /* Adjust paragraph size */
+}
+
+#about img {
+   width: 200px; /* Smaller image size for mobile */
+   height: 200px; /* Keep it circular */
+}
+
+
+   #Contact form {
+      width: 90%; /* Slightly smaller width for smaller screens */
+  }
+}
+
+
+
